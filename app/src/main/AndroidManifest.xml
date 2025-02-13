@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lumina">
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/lumina_logo"
+        android:label="LUMINA"
+        android:roundIcon="@mipmap/lumina_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LUMINA"
+        tools:targetApi="31">
+        <activity
+            android:name=".admin.AddExam"
+            android:exported="false" />
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Login Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" /> <!-- Admin Activities -->
+        <activity
+            android:name=".admin.HelpAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ManageWriters"
+            android:exported="false" />
+        <activity
+            android:name=".admin.QueriesAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AllotmentSchedule"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ExamAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.NotificationAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ProfileActivityAdmin"
+            android:exported="false" /> <!-- Writer Activities -->
+        <activity
+            android:name=".writer.WriterActivity"
+            android:exported="false"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".writer.AvailabilityWriters"
+            android:exported="false" />
+        <activity
+            android:name=".writer.FeedbackWriters"
+            android:exported="false" />
+        <activity
+            android:name=".writer.HelpResourcesWriters"
+            android:exported="false" />
+        <activity
+            android:name=".writer.ProfileActivityWriter"
+            android:exported="false" />
+        <activity
+            android:name=".writer.NotificationWriter"
+            android:exported="false" /> <!-- Visually Impaired (VI) Activities -->
+        <activity
+            android:name=".vi.VIActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vi.FeedbackVI"
+            android:exported="false" />
+        <activity
+            android:name=".vi.NotificationVi"
+            android:exported="false" />
+        <activity
+            android:name=".vi.ProfileActivityVi"
+            android:exported="false" />
+        <activity
+            android:name=".vi.HelpResourcesVI"
+            android:exported="false" /> <!-- Meta-data for Preloaded Fonts -->
+        <meta-data
+            android:name="android.preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

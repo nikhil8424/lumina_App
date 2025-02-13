@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "94855741894",
+    "firebase_url": "https://luminaapp-af5ae-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "luminaapp-af5ae",
+    "storage_bucket": "luminaapp-af5ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94855741894:android:ec8d5f9c7f0e17a474f2c7",
+        "android_client_info": {
+          "package_name": "com.example.lumina"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyjITRwSXDMutwgdaFpbQoXlL4nSji_bE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

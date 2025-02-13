@@ -1,0 +1,13 @@
+# Ignore specific Android/IDE files
+*.iml
+.gradle
+local.properties
+.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild
+.cxx
+
+# Allow tracking of everything else
+!*
